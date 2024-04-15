@@ -1,0 +1,62 @@
+/*---------MAIN PAGE-----------*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  background-color: #cad2e8;
+}  
+
+
+.topnav {
+  background-color: #1f202e;
+  overflow: hidden;
+  text-align: center;
+  font-family:'Montserrat', sans-serif;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* .topnav a.active {
+  background-color: rgb(204, 204, 204);
+  color: white;
+} */
+
+.general {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 250%;
+    text-align: center;
+    color: black;
+}
+
+.registrations {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    background-color:aquamarine;
+    margin-bottom:30px;
+
+}
+
+.contact {
+    margin-top: 20px;
+    background-color:#1f202e;
+    height: 100px;
+    color: #ddd;
+    padding: 10px 16px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space elements evenly */
+    align-items: flex-start; 
+}
+
