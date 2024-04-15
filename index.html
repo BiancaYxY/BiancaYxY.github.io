@@ -1,26 +1,42 @@
 <htmL>
-    <head> </head>
+    <head> <meta name="viewport" content="width=device-width, initial-scale=1.0"> </head>
     <link rel="stylesheet" href="stylesheet.css">
+    <!-- <link rel="javascript" href="script.js"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <body> 
-            <ul class="topnav">
-                <!-- <a href="logo" > -->
-                    <!-- <img src="public/kick off logo.png" style="width: 20px; height:30px;"> -->
-                <!-- </a> -->
-                 <a class="active" href="index.html">Home</a> 
+            <!-- <div class="topnav" id="topnav">
+                <a href="index.html" class="active">Home</a> 
                 <a href="conferenceteam.html">Conference Team</a>
                 <a href="agenda.html">Agenda</a>
                 <a href="delegates.html">Delegates Info</a>
                 <a href="partners.html">Our Partners</a>
-            </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div> -->
+
+
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Home</a> 
+                <a href="conferenceteam.html">Conference Team</a>
+                <a href="agenda.html">Agenda</a>
+                <a href="delegates.html">Delegates Info</a>
+                <a href="partners.html">Our Partners</a>
+        
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+
+        <script src="script.js"></script>
+
 
             <div class="general">
                 <img src="public/Logo colorat 6.svg" style="width: 200px; height:400px;">
                 <p>KICK OFF is back after 1500 days</p>
-                <!--  <video width="640" height="360" controls>
-                     <source src="public/kickoff reveal video.mp4"> 
-                    <source src="https://drive.google.com/file/d/1iQRXnR7YE8z3tpDxfdOfjGfI3y_gdk4X/view?usp=drive_link">
-                </video>  -->
-                <iframe src="https://drive.google.com/file/d/1PXjNWDC5-r01UQhCae-mP1ujNJ8Xi4j0/preview" width="640" height="480" allow="autoplay"></iframe>                <p>Register here:</p>
+                <div class="video-container">
+                    <iframe src="https://drive.google.com/file/d/1PXjNWDC5-r01UQhCae-mP1ujNJ8Xi4j0/preview" allow="autoplay"></iframe>
+                </div>
+                
+                <p>Register here:</p>
                 <button id="registrations">Link</button>
             </div>
 

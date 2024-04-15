@@ -1,27 +1,31 @@
-/*---------MAIN PAGE-----------*/
+/* Global Styles */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #cad2e8;
-}  
+  font-family: 'Montserrat', Arial, sans-serif; /* Merged font-family */
+  margin: 0;
+  padding: 0;
+  background-color: #cad2e8; /* Moved from .body */
+}
 
-
+/* Top Navigation */
 .topnav {
-  background-color: #1f202e;
   overflow: hidden;
-  text-align: center;
-  font-family:'Montserrat', sans-serif;
+  background-color: #333; /* Retained from the second set */
+  text-align: center; /* Moved from .topnav */
+  font-family: 'Montserrat', sans-serif; /* Moved from .topnav */
 }
 
 .topnav a {
   float: left;
+  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 17px; /* Retained from the first set */
 }
 
 .topnav a:hover {
@@ -29,34 +33,161 @@ body {
   color: black;
 }
 
-/* .topnav a.active {
-  background-color: rgb(204, 204, 204);
-  color: white;
-} */
-
+/* General Styles */
 .general {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 250%;
-    text-align: center;
-    color: black;
+  text-align: center;
+  padding: 20px;
+  font-size: 250%; /* Retained from the first set */
+  color: black;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width) */
+  overflow: hidden;
 }
 
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.general img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Registrations */
 .registrations {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 100%;
-    background-color:aquamarine;
-    margin-bottom:30px;
-
+  font-family: 'Montserrat', sans-serif; /* Moved from .registrations */
+  font-size: 100%; /* Retained from the first set */
+  background-color: aquamarine;
+  margin-bottom: 30px;
 }
 
+/* Contact */
 .contact {
-    margin-top: 20px;
-    background-color:#1f202e;
-    height: 100px;
-    color: #ddd;
-    padding: 10px 16px;
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space elements evenly */
-    align-items: flex-start; 
+  background-color: #1f202e; /* Retained from the first set */
+  height: 100px; /* Moved from .contact */
+  color: #ddd;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
+
+/* Down Bar (Assumed to be part of Contact) */
+.down-bar {
+  list-style-type: none;
+  padding: 0;
+}
+
+.down-bar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .topnav a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+}
+
+
+
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #2571c8;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
 
