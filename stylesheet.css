@@ -60,35 +60,18 @@ body {
   height: auto;
 }
 
+.kickoff_is_back {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 50%; 
+}
+
 /* Registrations */
 .registrations {
-  font-family: 'Montserrat', sans-serif; /* Moved from .registrations */
-  font-size: 100%; /* Retained from the first set */
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 70%; 
   background-color: aquamarine;
   margin-bottom: 30px;
 }
-
- /*Contact
-.contact {
-  background-color: #1f202e;  Retained from the first set 
-  height: 100px; Moved from .contact 
-  color: #ddd;
-  padding: 10px 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
- Down Bar (Assumed to be part of Contact) 
-.down-bar {
-  list-style-type: none;
-  padding: 0;
-}
-
-.down-bar li {
-  display: inline;
-  margin-right: 20px;
-} */
 
 .contact {
   background-color: #1f202e;
@@ -130,6 +113,23 @@ body {
   }
 }
 
+.registrations {
+
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+
 
 
 body {margin:0;font-family:Arial}
@@ -150,7 +150,6 @@ body {margin:0;font-family:Arial}
 }
 
 .active {
-  background-color: #2571c8;
   color: white;
 }
 
